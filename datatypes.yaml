@@ -1,0 +1,45 @@
+# String variables
+myself : Hirdesh Khandelwal
+fruit : "Apple"
+job : 'swe'
+
+bio : | 
+hey my name is Hirdesh Khandelwal.
+I am a Student.
+
+# write a single line in multiple lines
+message: >
+this will 
+all be
+in one single line.
+
+# same as
+message: !!str this will all be in one single line.
+
+number: 4567
+marks: 85.8
+booleanValue: !!bool Yes # yes y Y true True TRUE
+# same for No -> no n N false FALSE False
+
+# specify the data type
+
+# Integer
+zero: !!int 0
+positiveNum: !!int 45
+binaryNum: !!int 0b1101
+octalNum: !!int 0645
+hexa: !!int 0x45
+commaValue: !!int +540_000 # 540,000
+
+# Floating point number
+marks: !!float 85.78
+infinite: !!float .inf
+not a num: .nan
+
+# null
+example: !!null Null # or null NULL ~
+~: this is a null key
+
+# dates and time
+date: !!timestamp 2023-09-27
+india time: 2023-09-27T05:20:30.10 +5:30

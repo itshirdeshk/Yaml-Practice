@@ -1,0 +1,20 @@
+"apple" : "I am a fruit"
+1 : "This is a number"
+--- # this is used as a seprator
+# lists
+- apple
+- mango
+- banana
+# yaml is case sensitive so the above apple and below Apple both are different
+- Apple 
+---
+cities:
+ - new delhi
+ - mumbai
+ - bareilly
+ - agra
+---
+cities: [new delhi, mumbai]
+---
+{mango: "yellow fruit", age : 19}
+... # this shows document ended
